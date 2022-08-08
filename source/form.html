@@ -13,12 +13,11 @@
         alt="Логотип Sity of Sedona».">
     </a>
 
-    <nav class="page-navigation">
+    <nav class="page-header__page-navigation page-navigation">
       <button class="page-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <div class="page-navigation__wrapper">
         <ul class="page-navigation__list site-list">
           <li class="site-list__item">
             <a href="./index.html">
@@ -44,7 +43,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
 
@@ -83,12 +81,12 @@
         <legend class="contact-info__title">Контактная информация:</legend>
         <p class="contact-info__item">
           <label class="contact-info__item-label" for="user-phone">контактный телефон*:</label>
-          <input class="contact-info__item-input" type="telephone" id="user-phone" name="user-phone"
+          <input class="contact-info__item-input contact-info__item-input--telephone" type="telephone" id="user-phone" name="user-phone"
             placeholder="Введите телефон" required>
         </p>
         <p class="contact-info__item">
-          <label class="contact-info__item-label" for="user-e-mail">электронная почта*:</label>
-          <input class="contact-info__item-input" type="email" id="user-e-mail" name="user-e-mail"
+          <label class="contact-info__item-label" for="user-email">электронная почта*:</label>
+          <input class="contact-info__item-input contact-info__item-input--email" type="email" id="user-email" name="user-email"
             placeholder="Введите e-mail" required>
         </p>
       </fieldset>
@@ -100,14 +98,6 @@
             <label class="impression-control__wrapper">
               <input class="impression-control__input" type="radio" name="impression" value="Скорее положительное"
                 checked>
-              <span class="impression-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать скорее положительное."
-                  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="impression-control__label">Скорее положительное</span>
             </label>
           </li>
@@ -115,14 +105,6 @@
           <li class="impression__item impression-control">
             <label class="impression-control__wrapper">
               <input class="impression-control__input" type="radio" name="impression" value="Скорее отрицательное">
-              <span class="impression-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать скорее отрицательное."
-                  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="impression-control__label">Скорее отрицательное</span>
             </label>
           </li>
@@ -130,14 +112,6 @@
           <li class="impression__item impression-control">
             <label class="impression-control__wrapper">
               <input class="impression-control__input" type="radio" name="impression" value="Затрудняюсь ответить">
-              <span class="impression-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать затрудняюсь ответить."
-                  width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="impression-control__label">Затрудняюсь ответить</span>
             </label>
           </li>
@@ -151,14 +125,6 @@
             <label class="visited-attractions-control__wrapper">
               <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
                 value="Мост Дьявола" checked>
-              <span class="visited-attractions-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать мост Дьявола." width="10"
-                  height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="visited-attractions-control__label">Мост Дьявола</span>
             </label>
           </li>
@@ -167,14 +133,6 @@
             <label class="visited-attractions-control__wrapper">
               <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
                 value="Гора-Колокол" checked>
-              <span class="visited-attractions-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать Гора-Колокол." width="10"
-                  height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="visited-attractions-control__label">Гора-Колокол</span>
             </label>
           </li>
@@ -183,14 +141,6 @@
             <label class="visited-attractions-control__wrapper">
               <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
                 value="Слайд-парк" checked>
-              <span class="visited-attractions-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать Слайд-парк." width="10"
-                  height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="visited-attractions-control__label">Слайд-парк</span>
             </label>
           </li>
@@ -199,14 +149,6 @@
             <label class="visited-attractions-control__wrapper">
               <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
                 value="Красные скалы">
-              <span class="visited-attractions-control__mark">
-                <svg aria-hidden="true" focusable="false" role="img" aria-label="Выбрать Красные скалы." width="10"
-                  height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 5C0 2.23858 2.23858 0 5 0C7.76142 0 10 2.23858 10 5C10 7.76142 7.76142 10 5 10C2.23858 10 0 7.76142 0 5Z"
-                    fill="#3F5E72" />
-                </svg>
-              </span>
               <span class="visited-attractions-control__label">Красные скалы</span>
             </label>
           </li>
@@ -261,8 +203,8 @@
   </footer>
 
 
-  <div class="modal-container modal-container--close">
-    <div class="modal-container__wrong modal-container__wrong--close">
+  <div class="modal-container modal-container--show">
+    <div class="modal-container__wrong modal-container__wrong--show">
       <h3 class="modal-container__title">Что-то пошло не так</h3>
       <p class="modal-container__description">Проверьте поля, выделенные красным,скорее всего вы забыли их заполнить</p>
       <button class="modal-container__button" type="button">
@@ -270,7 +212,7 @@
       </button>
     </div>
 
-    <div class="modal-container__success modal-container__success--close">
+    <div class="modal-container__success modal-container__success--show">
       <h3 class="modal-container__title">Ваш отзыв отправлен!</h3>
       <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
         мы опубликуем его на сайте.</p>
