@@ -16,38 +16,36 @@
           alt="Логотип Sity of Sedona».">
       </a>
 
-      <nav class="page-navigation">
+      <nav class="page-header__page-navigation page-navigation">
         <button class="page-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="page-navigation__wrapper">
-          <ul class="page-navigation__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a>
-                Главная
-              </a>
-            </li>
+        <ul class="page-navigation__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>
+              Главная
+            </a>
+          </li>
 
-            <li class="site-list__item">
-              <a href="./catalog.html">
-                Фото и Видео
-              </a>
-            </li>
+          <li class="site-list__item">
+            <a href="./catalog.html">
+              Фото и Видео
+            </a>
+          </li>
 
-            <li class="site-list__item">
-              <a href="./form.html">
-                Форма отзыва
-              </a>
-            </li>
+          <li class="site-list__item">
+            <a href="./form.html">
+              Форма отзыва
+            </a>
+          </li>
 
-            <li class="site-list__item">
-              <a href="#">
-                htmlacademy
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="site-list__item">
+            <a href="#">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -71,7 +69,9 @@
               <p class="advantage__number">— №1 —</p>
               <p class="advantage__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantage__image" src="#" width="800" height="384" alt="Улица Седоны.">
+            <div class="advantage__image-container">
+              <img class="advantage__image" src="#" width="800" height="384" alt="Улица Седоны.">
+            </div>
           </li>
 
           <li class="advantages__item advantage">
@@ -96,7 +96,9 @@
           </li>
 
           <li class="advantages__item advantages__item--blue advantage">
-            <img class="advantage__image" src="#" width="800" height="384" alt="Удивительная природа SEDONA.">
+            <div class="advantage__image-container">
+              <img class="advantage__image" src="#" width="800" height="384" alt="Удивительная природа SEDONA.">
+            </div>
             <div class="advantage__content">
               <p class="advantage__title">Там есть мост дьявола</p>
               <p class="advantage__number">— №2 —</p>
@@ -167,7 +169,8 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="60" height="60" alt="Логотип htmlacademy».">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="60" height="60"
+            alt="Логотип htmlacademy».">
         </a>
       </div>
     </footer>
