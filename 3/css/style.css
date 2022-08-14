@@ -50,16 +50,6 @@
 .page__footer {
   margin: 0;
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .page-header {
   border: 1px solid #000000;
 }
@@ -113,6 +103,9 @@
   margin: 0;
   border: 1px solid #000000;
 }
+.main-container__feedback-form {
+  margin: 0;
+}
 .main-header {
   margin: 0;
 }
@@ -154,7 +147,7 @@
   text-align: center;
   color: #000000;
 }
-.main-header__description--font {
+.main-header__description--large {
   font-weight: 700;
   font-size: 30px;
   line-height: 26px;
@@ -165,11 +158,6 @@
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-}
-.main-header__explanation--font {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
 }
 .page-footer {
   padding: 36px 120px;
@@ -237,11 +225,12 @@
 .advantages__item {
   margin: 0;
 }
-.advantages__item--blue {
-  background-color: #80b2d1;
-}
 .advantage {
   margin: 0;
+}
+.advantage--blue {
+  background-color: #80b2d1;
+  color: #ffffff;
 }
 .advantage__content {
   margin: 0;
@@ -252,21 +241,12 @@
   font-size: 21px;
   line-height: 26px;
 }
-.advantage__title--white {
-  color: #ffffff;
-}
 .advantage__number {
   margin: 0;
-}
-.advantage__number--white {
-  color: #ffffff;
 }
 .advantage__description {
   margin: 0;
   text-transform: uppercase;
-}
-.advantage__description--white {
-  color: #ffffff;
 }
 .advantage__image-container {
   margin: 0;
@@ -393,13 +373,7 @@
 .feedback-form {
   margin: 0;
 }
-.main-container__feedback-form {
-  margin: 0;
-}
-.feedback-form__full-name {
-  margin: 0;
-}
-.feedback-form__contact-info {
+.feedback-form__user-info {
   margin: 0;
 }
 .feedback-form__impression {
@@ -420,40 +394,22 @@
 .feedback-form__remark {
   margin: 0;
 }
-.full-name {
+.user-info {
   margin: 0;
 }
-.full-name__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-.full-name__item {
-  margin: 0;
-}
-.full-name__item-label {
-  margin: 0;
-}
-.full-name__item-input {
-  margin: 0;
-}
-.contact-info {
-  margin: 0;
-}
-.contact-info__title {
+.user-info__title {
   margin: 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
-.contact-info__item {
+.user-info__item {
   margin: 0;
 }
-.contact-info__item-label {
+.user-info__item-label {
   margin: 0;
 }
-.contact-info__item-input {
+.user-info__item-input {
   margin: 0;
 }
 .impression {

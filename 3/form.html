@@ -59,40 +59,40 @@
         <div class="main-header__image-container">
           <img class="main-header__image" src="./img/sedona-catalog.svg" width="460" height="80" alt="Седона.">
         </div>
-        <p class="main-header__description main-header__description--font">оставьте свой отзыв</p>
-        <p class="main-header__explanation main-header__explanation--font">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="main-header__description main-header__description--large">Оставьте свой отзыв</p>
+        <p class="main-header__explanation">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
 
       <form class="main-container__feedback-form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="feedback-form__full-name full-name">
-          <legend class="full-name__title">Представьтесь:</legend>
-          <p class="full-name__item">
-            <label class="full-name__item-label" for="user-name">Имя*:</label>
-            <input class="full-name__item-input" type="text" id="user-name" name="user-name"
+        <fieldset class="feedback-form__user-info feedback-form__user-info--full-name user-info">
+          <legend class="user-info__title">Представьтесь:</legend>
+          <p class="user-info__item">
+            <label class="user-info__item-label" for="user-name">Имя*:</label>
+            <input class="user-info__item-input" type="text" id="user-name" name="user-name"
               placeholder="Введите ваше имя" required>
           </p>
-          <p class="full-name__item">
-            <label class="full-name__item-label" for="user-surname">Фамилия*:</label>
-            <input class="full-name__item-input" type="text" id="user-surname" name="user-surname"
+          <p class="user-info__item">
+            <label class="user-info__item-label" for="user-surname">Фамилия*:</label>
+            <input class="user-info__item-input" type="text" id="user-surname" name="user-surname"
               placeholder="Введите вашу фамилию" required>
           </p>
-          <p class="full-name__item">
-            <label class="full-name__item-label" for="user-patronymic">Отчество:</label>
-            <input class="full-name__item-input" type="text" id="user-patronymic" name="user-patronymic"
+          <p class="user-info__item">
+            <label class="user-info__item-label" for="user-patronymic">Отчество:</label>
+            <input class="user-info__item-input" type="text" id="user-patronymic" name="user-patronymic"
               placeholder="Введите ваше отчество, если желаете">
           </p>
         </fieldset>
 
-        <fieldset class="feedback-form__contact-info contact-info">
-          <legend class="contact-info__title">Контактная информация:</legend>
-          <p class="contact-info__item">
-            <label class="contact-info__item-label" for="user-phone">контактный телефон*:</label>
-            <input class="contact-info__item-input contact-info__item-input--telephone" type="telephone" id="user-phone"
+        <fieldset class="feedback-form__user-info feedback-form__user-info--contacts user-info">
+          <legend class="user-info__title">Контактная информация:</legend>
+          <p class="user-info__item">
+            <label class="user-info__item-label" for="user-phone">контактный телефон*:</label>
+            <input class="user-info__item-input user-info__item-input--telephone" type="telephone" id="user-phone"
               name="user-phone" placeholder="Введите телефон" required>
           </p>
-          <p class="contact-info__item">
-            <label class="contact-info__item-label" for="user-email">электронная почта*:</label>
-            <input class="contact-info__item-input contact-info__item-input--email" type="email" id="user-email"
+          <p class="user-info__item">
+            <label class="user-info__item-label" for="user-email">электронная почта*:</label>
+            <input class="user-info__item-input user-info__item-input--email" type="email" id="user-email"
               name="user-email" placeholder="Введите e-mail" required>
           </p>
         </fieldset>
