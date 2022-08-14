@@ -1,0 +1,50 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  z-index: 990;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.modal-container__wrong {
+  display: none;
+  width: 400px;
+  margin: auto;
+  padding: 48px;
+  background-color: #ffffff;
+}
+
+.modal-container__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.modal-container__description {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.modal-container__button {
+  margin: 0;
+}
+
+.modal-container__success {
+  display: none;
+  width: 640px;
+  margin: auto;
+  padding: 48px;
+  background-color: #ffffff;
+}

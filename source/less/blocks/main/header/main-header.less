@@ -1,0 +1,60 @@
+.main-header {
+  margin: 0;
+}
+
+.main-header__image-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 518px;
+  margin-bottom: 59px;
+  padding-top: 78px;
+  background-image: url("../../../../img/image-welcome-to-the-gorgeous-desktop.jpg");
+  background-color: #115e5e;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  &--catalog {
+    height: 357px;
+    background-image: url("../../../../img/image-sedona-catalog-desktop.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    background-image: url("../../../../img/maska-index-desctop.svg");
+  }
+}
+
+.main-header__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header__description {
+  width: 483px;
+  margin: 0 auto 31px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  &--large {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.main-header__explanation {
+  width: 490px;
+  margin: 0 auto;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
