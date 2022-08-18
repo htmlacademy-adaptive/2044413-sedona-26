@@ -1,14 +1,30 @@
 .advantages {
-  margin: 0;
-  border: 1px solid #000000;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0;
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    // min-width: 256px;
+    // min-height: 256px;
+  }
 }

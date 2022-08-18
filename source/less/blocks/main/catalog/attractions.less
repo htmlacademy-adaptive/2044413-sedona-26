@@ -3,9 +3,25 @@
 }
 
 .attractions__list {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0;
+  margin: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desctop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 }
 
 .attractions__item {

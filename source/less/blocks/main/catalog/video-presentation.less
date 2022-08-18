@@ -1,8 +1,14 @@
 .video-presentation {
   margin: 0;
-  padding-top: 62px;
-  padding-bottom: 120px;
-  border: 1px solid #000000;
+  padding-top: 43px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 62px;
+  }
 }
 
 .video-presentation__title {
@@ -16,10 +22,18 @@
 }
 
 .video-presentation__info {
-  margin: 0 auto 64px;
+  margin: 0 auto 38px;
   color: #333333;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
+  }
 }
 
 .video-presentation__player {
