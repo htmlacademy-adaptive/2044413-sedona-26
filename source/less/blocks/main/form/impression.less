@@ -1,14 +1,30 @@
 .impression {
+  padding: 24px 20px;
   margin: 0;
+  border: none;
 }
 
 .impression__title {
-  margin: 0;
+  margin: 0 auto 20px;
+  padding: 0;
   .feedback-form-fieldset-title-style();
 }
 
 .impression__list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   max-width: 324px;
+  // }
 }
 
 .impression__item {

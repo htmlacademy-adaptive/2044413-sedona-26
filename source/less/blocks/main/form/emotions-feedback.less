@@ -1,12 +1,22 @@
 .emotions-feedback {
-  margin: 0;
+  padding: 24px 20px 56px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 60px 48px;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   max-width: 324px;
+  // }
 }
 
 .emotions-feedback__title {
-  margin: 0;
+  margin:0 auto 20px;
   .feedback-form-fieldset-title-style();
 }
 
 .emotions-feedback__text {
+  width: 100%;
   margin: 0;
 }

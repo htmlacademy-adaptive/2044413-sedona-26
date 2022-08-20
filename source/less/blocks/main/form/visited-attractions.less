@@ -1,14 +1,30 @@
 .visited-attractions {
+  padding: 24px 20px;
   margin: 0;
+  border: none;
 }
 
 .visited-attractions__title {
-  margin: 0;
+  margin: 0 auto 20px;
   .feedback-form-fieldset-title-style();
 }
 
 .visited-attractions__list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   max-width: 324px;
+  // }
 }
 
 .visited-attractions__item {
