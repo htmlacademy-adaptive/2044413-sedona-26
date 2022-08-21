@@ -11,12 +11,19 @@
   padding-top: 78px;
   background-image: url("../../../../img/image-welcome-to-the-gorgeous-mobile.jpg");
   background-color: #115e5e;
-  // background-size: 100% auto;
-  // background-repeat: no-repeat;
 
   &--catalog {
-    height: 357px;
-    background-image: url("../../../../img/image-sedona-catalog-desktop.jpg");
+    height: 214px;
+    background-image: url("../../../../img/back-mobile.jpg");
+
+    @media (min-width: @tablet-width) {
+      height: 346px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 357px;
+    }
+
   }
 
   &::before {

@@ -1,5 +1,9 @@
-.attraction {
-  margin: 0;
+.attraction {}
+
+.attraction:first-child .attraction__image {
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .attraction__image-link {
@@ -7,8 +11,13 @@
 }
 
 .attraction__image {
+  height: 280px;
   margin: 0;
   background-color: #00ffff;
+
+  @media (min-width: @tablet-width) {
+    height: 267px;
+  }
 }
 
 .attraction__description {

@@ -1,5 +1,5 @@
 .video-presentation {
-  margin: 0;
+  // margin: 0;
   padding-top: 43px;
 
   @media (min-width: @tablet-width) {
@@ -12,13 +12,16 @@
 }
 
 .video-presentation__title {
-  width: 445px;
   margin: 0 auto 29px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+   font-size: 30px;
+  }
 }
 
 .video-presentation__info {
@@ -37,7 +40,7 @@
 }
 
 .video-presentation__player {
-  margin: 0;
+  position: relative;
 }
 
 .video-presentation__image {
@@ -47,5 +50,6 @@
 }
 
 .video-presentation__play-button {
-  margin: 0;
+  position: absolute;
+  top: 0;
 }
