@@ -4,9 +4,20 @@
 
 .page-navigation__toggle {
   margin: 0;
+
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-navigation__list {
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
