@@ -15,23 +15,48 @@
 }
 
 .feedback-form__user-info {
+  box-sizing: border-box;
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    // flex-grow: 1;
-    // max-width: 50%;
+    min-width: 50%;
+    max-width: 50%;
+    // padding-right: 43px;
   }
 
-  // @media (min-width: @desktop-width) {
-  //   max-width: 324px;
-  // }
+  // flex-grow: 1;
+  // flex-basis: 0;
+
+  &--full-name {
+    @media (min-width: @tablet-width) {
+      // padding-right: 43px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: @tablet-width) {
+      // padding-left: 44px;
+    }
+  }
+}
+
+.feedback-form__user-info--full-name.user-info {
+  @media (min-width: @tablet-width) {
+    padding-right: 43px;
+  }
+}
+
+.feedback-form__user-info--contacts.user-info {
+  @media (min-width: @tablet-width) {
+    padding-left: 44px;
+  }
 }
 
 .feedback-form__impression {
-  margin: 0;
+  margin: 0 0 24px;
 
   @media (min-width: @tablet-width) {
-   width:  100%;
+    width: 100%;
   }
 
   // @media (min-width: @desktop-width) {
@@ -40,47 +65,59 @@
 }
 
 .feedback-form__visited-attractions {
-  margin: 0;
+  margin: 0 0 24px;
 
   @media (min-width: @tablet-width) {
-    width:  100%;
-   }
+    width: 100%;
+  }
 
-   // @media (min-width: @desktop-width) {
-   //   max-width: 324px;
-   // }
+  // @media (min-width: @desktop-width) {
+  //   max-width: 324px;
+  // }
 }
 
 .feedback-form__emotions-feedback {
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width:  100%;
-   }
+    width: 100%;
+  }
 
-   // @media (min-width: @desktop-width) {
-   //   max-width: 324px;
-   // }
+  // @media (min-width: @desktop-width) {
+  //   max-width: 324px;
+  // }
 }
 
 .feedback-form__control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 768px;
+  }
 }
 
 .feedback-form__submit-button {
   display: block;
   box-sizing: border-box;
-  margin: 0 auto;
+  // margin: 0 auto;
   min-width: 281px;
-  padding: 19px 34px 14px 32px;
+  padding: 19px 33px 14px;
   background-color: #81b3d2;
+  border: none;
 }
 
 .feedback-form__post-review {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
+  // text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -88,4 +125,5 @@
 
 .feedback-form__remark {
   margin: 0;
+  text-align: center;
 }
