@@ -1,0 +1,118 @@
+.advantage {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0;
+
+  &--blue {
+    width: 100%;
+    background-color: #80b2d1;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  &:first-child {
+    position: relative;
+    padding-top: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/maska-2-mobile.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        display: none;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+    }
+  }
+}
+
+.advantage__content {
+  box-sizing: border-box;
+  padding: 26px 0 24px;
+  text-align: center;
+
+  &--special {
+    padding: 23px 18px 2px;
+  }
+
+  &--last-special {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 192px;
+    padding-bottom: 63px;
+
+    flex-grow: 1;
+    flex-basis: 0;
+
+    &--last {
+      order: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 295px;
+  }
+}
+
+.advantage__title {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    width: 192px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 256px;
+  }
+}
+
+.advantage__number {
+  margin: 0 auto;
+}
+
+.advantage__description {
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 192px;
+  }
+}
+
+.advantage__image-container {
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+}
+
+.advantage__image {
+  display: block;
+  margin: 0;
+  background-color: rgba(129, 179, 210, 1);
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}

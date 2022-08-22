@@ -1,0 +1,99 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback-form__user-info {
+  box-sizing: border-box;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+.feedback-form__user-info--full-name.user-info {
+  @media (min-width: @tablet-width) {
+    padding-right: 43px;
+  }
+}
+
+.feedback-form__user-info--contacts.user-info {
+  @media (min-width: @tablet-width) {
+    padding-left: 44px;
+  }
+}
+
+.feedback-form__impression {
+  margin: 0 0 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.feedback-form__visited-attractions {
+  margin: 0 0 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.feedback-form__emotions-feedback {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.feedback-form__control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 768px;
+  }
+}
+
+.feedback-form__submit-button {
+  display: block;
+  box-sizing: border-box;
+  min-width: 281px;
+  padding: 19px 33px 14px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.feedback-form__post-review {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.feedback-form__remark {
+  margin: 0;
+  text-align: center;
+}
