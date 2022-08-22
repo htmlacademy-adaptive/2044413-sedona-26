@@ -68,7 +68,8 @@
 .page-header__logo {
   position: absolute;
   top: 0;
-  left: calc(50% - 185px / 2);
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
   z-index: 999;
 }
@@ -353,11 +354,11 @@
     flex-direction: row;
   }
 }
-.advantage--maska {
+.advantage:first-child {
   position: relative;
   padding-top: 15px;
 }
-.advantage--maska::before {
+.advantage:first-child::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -367,12 +368,12 @@
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  .advantage--maska::before {
+  .advantage:first-child::before {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .advantage--maska {
+  .advantage:first-child {
     padding-top: 0;
   }
 }
