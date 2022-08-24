@@ -15,6 +15,7 @@
 .attraction__image {
   height: 280px;
   margin: 0;
+  margin-bottom: 15px;
   background-color: #00ffff;
 
   @media (min-width: @tablet-width) {
@@ -23,7 +24,9 @@
 }
 
 .attraction__description {
+  position: relative;
   margin: 0;
+  padding-bottom: 25px;
 
   a {
     color: inherit;
@@ -37,17 +40,22 @@
 
 .attraction__name {
   margin: 0;
+  margin-bottom: 13px;
   text-transform: uppercase;
 }
 
 .attraction__author {
-  margin: 0;
+  display: block;
+  margin-bottom: 11px;
 }
 
 .attraction__like-button {
+  position: absolute;
+  top: 63px;
+  left: 0px;
   margin: 0;
 }
 
 .attraction__likes-amount {
-  margin: 0;
+  margin-left: 37px;
 }

@@ -7,8 +7,8 @@
 
   &--blue {
     width: 100%;
-    background-color: #80b2d1;
     color: rgba(255, 255, 255, 1);
+    background-color: #80b2d1;
   }
 
   @media (min-width: @tablet-width) {
@@ -54,8 +54,7 @@
 
   @media (min-width: @tablet-width) {
     min-width: 192px;
-    padding-bottom: 63px;
-
+    // padding-bottom: 42px 34px 44px;
     flex-grow: 1;
     flex-basis: 0;
 
@@ -70,10 +69,11 @@
 }
 
 .advantage__title {
-  margin: 0 auto;
+  margin: 0 auto 11px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 192px;
@@ -85,11 +85,12 @@
 }
 
 .advantage__number {
-  margin: 0 auto;
+  margin: 0 auto 17px;
 }
 
 .advantage__description {
   margin: 0 auto;
+  text-align: center;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {

@@ -1,23 +1,125 @@
 .page-navigation {
+  position: relative;
   margin: 0;
+  min-height: 56px;
+  // background-color: #81b3d2;
+  // background-color: red;
 }
 
+//Зададим стили и спозиционируем кнопку.//
 .page-navigation__toggle {
-  margin: 0;
-
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  // z-index: 9999;
+  // display: block;
+  padding: 0;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
+//Зададим стили и спозиционируем бургер(закрытое меню).//
+.page-navigation--closed .page-navigation__toggle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+
+//Зададим стили для переключателя при закрытом меню в состоянии hover.//
+.page-navigation--closed .page-navigation__toggle:hover::before {
+  background-color: fade(#81b3d2, 30%);
+  box-shadow:
+    0 9px 0 0 fade(#81b3d2, 30%),
+    0 18px 0 0 fade(#81b3d2, 30%);
+}
+
+//Зададим стили для переключателя при закрытом меню в состоянии active.//
+.page-navigation--closed .page-navigation__toggle:active::before {
+  background-color: fade(#81b3d2, 60%);
+  box-shadow:
+    0 9px 0 0 fade(#81b3d2, 60%),
+    0 18px 0 0 fade(#81b3d2, 60%);
+}
+
+// Добавляем специальный размер экрана для Mobile и соответственно вводим новую переменную.//
+// Открытие и закрытие меню должно быть реализовано только в мобильной версии.//
+// Сейчас мы скроем все пункты меню.//
+.page-navigation--closed:not(.page-navigation--nojs) .page-navigation__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+// Теперь добавим класс в разметку HTML для переключателя при открытом меню(page-navigation--opened)//
+//Зададим стили для переключателя при открытом меню и здесь делаем крестик.//
+.page-navigation--opened .page-navigation__toggle {
+  // top: 0;
+  // right: auto;
+  // right: 0;
+  z-index: 999;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -5px;
+    width: 32px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+// Далее занимаемся нашей навигацией. Идем в блок site-list. //
+
 .page-navigation__list {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
   margin: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    position: static;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+}
+
+.page-navigation--nojs .page-navigation__list {
+  position: relative;
+  z-index: 99;
 }
