@@ -4,8 +4,9 @@
 }
 
 .impression__title {
-  margin: 0 auto 20px;
+  margin: 0 auto 43px;
   padding: 0;
+  text-transform: uppercase;
   .feedback-form-fieldset-title-style();
 }
 
@@ -17,11 +18,50 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 
 .impression__item {
   margin: 0;
+}
+
+.impression-control__button {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  position: absolute;
+  top: -13px;
+  left: -62px;
+
+  &:hover {
+    background-color: #e5e5e5;
+   }
+
+   &:active {
+     background-color:#d5d5d5;
+    }
+}
+
+.impression-control__button::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    background-color: #333333;
+   }
+
+   &:active {
+     background-color: rgba(51, 51, 51, 0.3);
+    }
 }
