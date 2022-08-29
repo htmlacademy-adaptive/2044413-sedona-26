@@ -51,16 +51,24 @@
   text-align: center;
   color: #000000;
 
-  &--large {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 26px;
-  }
-
   @media (min-width: @tablet-width) {
-    width: calc(100% - 248px);
+    width: 520px;
     padding: 0 124px;
     font-size: 21px;
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      width: 458px;
+      font-size: 30px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      width: 434px;
+      font-size: 30px;
+    }
   }
 }
 
@@ -70,4 +78,20 @@
   color: #333333;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 520px;
+  }
+
+  &--catalog {
+    @media (min-width: @tablet-width) {
+      width: 458px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @tablet-width) {
+      width: 434px;
+    }
+  }
 }

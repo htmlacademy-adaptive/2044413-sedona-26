@@ -24,12 +24,17 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 0 84px;
   }
 }
 
 .visited-attractions__item {
   margin: 0;
+  min-width: 224px;
+
+  @media (min-width: @desktop-width) {
+    min-width: 172px;
+  }
 }
 
 .visited-attractions-control__label {
@@ -58,7 +63,7 @@
 
 .visited-attractions__button::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 4px;
   background-color: #333333;
   display: block;
@@ -66,14 +71,12 @@
   left: 66%;
   width: 9px;
   margin-left: -15px;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .visited-attractions__button::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 4px;
   background-color: #333333;
   display: block;
@@ -83,4 +86,9 @@
   margin-left: -11px;
   margin-top: -6px;
   transform: rotate(-45deg);
+}
+
+.visited-attractions-control__input:not(:checked) + .visited-attractions__button::before,
+.visited-attractions-control__input:not(:checked) + .visited-attractions__button::after {
+  display: none;
 }
