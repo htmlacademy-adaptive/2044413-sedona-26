@@ -185,8 +185,7 @@
 }
 @media (min-width: 768px) {
   .site-list__item {
-    min-width: 20%;
-    max-width: 20%;
+    width: 20%;
   }
   .site-list__item:nth-child(4n + 2) {
     margin-right: 20%;
@@ -526,8 +525,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 0;
-    min-width: calc(100% / 3);
-    max-width: calc(100% / 3);
+    width: calc(100% / 3);
   }
 }
 .advantage--blue {
@@ -537,8 +535,7 @@
 }
 @media (min-width: 768px) {
   .advantage--blue {
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -577,7 +574,7 @@
 }
 @media (min-width: 768px) {
   .advantage__title {
-    width: 182px;
+    min-width: 182px;
   }
 }
 @media (min-width: 1200px) {
@@ -828,15 +825,13 @@
 }
 @media (min-width: 768px) {
   .attractions__item {
-    min-width: 50%;
-    max-width: 50%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
   .attractions__item {
     position: relative;
-    min-width: calc(100% / 3);
-    max-width: calc(100% / 3);
+    width: calc(100% / 3);
   }
 }
 @media (min-width: 768px) {
@@ -1026,17 +1021,7 @@
 @media (min-width: 768px) {
   .feedback-form__user-info {
     position: relative;
-    min-width: 50%;
-    max-width: 50%;
-  }
-  .feedback-form__user-info .feedback-form__user-info::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 1px;
-    height: 338px;
-    bottom: 39px;
-    background-color: #e5e5e5;
+    width: 50%;
   }
 }
 .feedback-form__user-info::after {
@@ -1306,7 +1291,8 @@
   font-size: 18px;
   line-height: 26px;
 }
-.impression-control__button {
+.impression-control__button::before {
+  content: "";
   display: block;
   width: 46px;
   height: 46px;
@@ -1316,30 +1302,28 @@
   top: -13px;
   left: -62px;
 }
-.impression-control__button:hover {
+.impression-control__button::before:hover {
   background-color: #e5e5e5;
 }
-.impression-control__button:active {
+.impression-control__button::before:active {
   background-color: #d5d5d5;
 }
-.impression-control__button::before {
+.impression-control__button::after {
   content: "";
   width: 16px;
   height: 16px;
   background-color: #333333;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 2px;
+  left: -46px;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
 }
-.impression-control__button::before:hover {
+.impression-control__button::after:hover {
   background-color: #333333;
 }
-.impression-control__button::before:active {
+.impression-control__button::after:active {
   background-color: rgba(51, 51, 51, 0.3);
 }
-.impression-control__input:not(:checked) + .impression-control__button::before,
 .impression-control__input:not(:checked) + .impression-control__button::after {
   display: none;
 }
@@ -1389,48 +1373,35 @@
   font-size: 18px;
   line-height: 26px;
 }
-.visited-attractions__button {
+.visited-attractions__button::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -62px;
   display: block;
   width: 46px;
   height: 46px;
   border-radius: 4px;
   background-color: #f2f2f2;
-  position: absolute;
-  top: -13px;
-  left: -62px;
 }
-.visited-attractions__button:hover {
+.visited-attractions__button::before:hover {
   background-color: #e5e5e5;
 }
-.visited-attractions__button:active {
+.visited-attractions__button::before:active {
   background-color: #d5d5d5;
 }
 .visited-attractions__button::after {
-  position: absolute;
   content: "";
-  height: 4px;
-  background-color: #333333;
-  display: block;
-  top: 50%;
-  left: 66%;
-  width: 9px;
-  margin-left: -15px;
-  transform: rotate(45deg);
-}
-.visited-attractions__button::before {
   position: absolute;
-  content: "";
-  height: 4px;
-  background-color: #333333;
+  top: 0px;
+  left: -50px;
   display: block;
-  top: 51%;
-  left: 68%;
+  height: 9px;
   width: 18px;
-  margin-left: -11px;
-  margin-top: -6px;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
   transform: rotate(-45deg);
 }
-.visited-attractions-control__input:not(:checked) + .visited-attractions__button::before,
 .visited-attractions-control__input:not(:checked) + .visited-attractions__button::after {
   display: none;
 }
@@ -1495,25 +1466,20 @@
 .modal-container--show {
   display: flex;
 }
+.modal-container--displayed {
+  display: block;
+}
 .modal-container__content {
   display: none;
   box-sizing: border-box;
   margin: 0 auto;
-  min-width: 340px;
-  max-width: 340px;
+  width: 340px;
   padding-top: 20px;
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .modal-container__content {
-    min-width: 400px;
-    max-width: 400px;
-  }
-}
-@media (min-width: 768px) {
-  .modal-container__content.modal-container__content--success {
-    min-width: 640px;
-    max-width: 640px;
+    width: 400px;
   }
 }
 .modal-container__content--wrong {
@@ -1538,6 +1504,7 @@
 }
 @media (min-width: 768px) {
   .modal-container__content--success {
+    width: 640px;
     margin-top: 162px;
     padding-top: 53px;
   }
@@ -1548,11 +1515,8 @@
     padding-top: 51px;
   }
 }
-.modal-container__content--wrong.modal-container__content--show {
-  display: none;
-}
-.modal-container__content--success.modal-container__content--show {
-  display: none;
+.modal-container__content--displayed {
+  display: block;
 }
 .modal-container__title {
   margin: 0;
@@ -1655,9 +1619,7 @@
 }
 @media (min-width: 768px) {
   .modal-container__button-text {
-    font-weight: 700;
     font-size: 21px;
-    line-height: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
