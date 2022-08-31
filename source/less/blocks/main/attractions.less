@@ -29,13 +29,12 @@
   min-width: 280px;
 
   @media (min-width: @tablet-width) {
-    min-width: 50%;
-    max-width: 50%;
+   width: 50%;
   }
 
   @media (min-width: @desktop-width) {
-    min-width: calc(100% / 3);
-    max-width: calc(100% / 3);
+    position: relative;
+    width: calc(100% / 3);
   }
 
   &:first-child {

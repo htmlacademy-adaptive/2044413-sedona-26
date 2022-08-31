@@ -16,13 +16,9 @@
           alt="Логотип Sity of Sedona».">
       </a>
 
-      <nav class="page-header__page-navigation page-navigation">
+      <nav class="page-header__page-navigation page-navigation page-navigation--closed page-navigation--nojs">
         <button class="page-navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
-          <svg aria-hidden="true" focusable="false" role="img" aria-label="Кнопка открыть меню." width="32" height="32"
-            viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28 6H4v4h24V6ZM28 14H4v4h24v-4ZM28 22H4v4h24v-4Z" fill="#81B3D2" />
-          </svg>
         </button>
 
         <ul class="page-navigation__list site-list">
@@ -59,8 +55,10 @@
         <div class="main-header__image-container main-header__image-container--form">
           <img class="main-header__image" src="./img/sedona-catalog-mobile.svg" width="" height="39" alt="Седона.">
         </div>
-        <p class="main-header__description main-header__description--large">Оставьте свой отзыв</p>
-        <p class="main-header__explanation">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="main-header__description main-header__description--form">Оставьте свой отзыв</p>
+        <p class="main-header__explanation main-header__explanation--form">Помогите нашим отелям стать лучше! оставьте
+          отзыв о них, а также о
+          посещенных вами достопримечательностях</p>
       </section>
 
       <form class="main-container__feedback-form feedback-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -85,15 +83,15 @@
 
         <fieldset class="feedback-form__user-info feedback-form__user-info--contacts user-info">
           <legend class="user-info__title">Контактная информация:</legend>
-          <p class="user-info__item">
-            <label class="user-info__item-label" for="user-phone">контактный телефон*:</label>
-            <input class="user-info__item-input user-info__item-input--telephone" type="telephone" id="user-phone"
-              name="user-phone" placeholder="Введите телефон" required>
+          <p class="user-info__item user-info__item--telephone">
+            <label class="user-info__item-label" for="user-phone">Контактный телефон*:</label>
+            <input class="user-info__item-input" type="telephone" id="user-phone" name="user-phone"
+              placeholder="Введите телефон" required>
           </p>
-          <p class="user-info__item">
-            <label class="user-info__item-label" for="user-email">электронная почта*:</label>
-            <input class="user-info__item-input user-info__item-input--email" type="email" id="user-email"
-              name="user-email" placeholder="Введите e-mail" required>
+          <p class="user-info__item user-info__item--email">
+            <label class="user-info__item-label" for="user-email">Электронная почта*:</label>
+            <input class="user-info__item-input" type="email" id="user-email" name="user-email"
+              placeholder="Введите e-mail" required>
           </p>
         </fieldset>
 
@@ -102,23 +100,24 @@
           <ul class="impression__list">
             <li class="impression__item impression-control">
               <label class="impression-control__wrapper">
-                <input class="impression-control__input" type="radio" name="impression" value="Скорее положительное"
-                  checked>
-                <span class="impression-control__label">Скорее положительное</span>
+                <input class="impression-control__input visually-hidden" type="radio" name="impression"
+                  value="Скорее положительное" checked>
+                <span class="impression-control__button">Скорее отрицательное</span>
               </label>
             </li>
 
             <li class="impression__item impression-control">
               <label class="impression-control__wrapper">
-                <input class="impression-control__input" type="radio" name="impression" value="Скорее отрицательное">
-                <span class="impression-control__label">Скорее отрицательное</span>
-              </label>
+                <input class="impression-control__input visually-hidden" type="radio" name="impression"
+                  value="Скорее отрицательное">
+                <span class="impression-control__button">Скорее отрицательное</span>
             </li>
 
             <li class="impression__item impression-control">
               <label class="impression-control__wrapper">
-                <input class="impression-control__input" type="radio" name="impression" value="Затрудняюсь ответить">
-                <span class="impression-control__label">Затрудняюсь ответить</span>
+                <input class="impression-control__input visually-hidden" type="radio" name="impression"
+                  value="Затрудняюсь ответить">
+                <span class="impression-control__button">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -129,33 +128,33 @@
           <ul class="visited-attractions__list">
             <li class="visited-attractions__item visited-attractions-control">
               <label class="visited-attractions-control__wrapper">
-                <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
-                  value="Мост Дьявола" checked>
-                <span class="visited-attractions-control__label">Мост Дьявола</span>
+                <input class="visited-attractions-control__input visually-hidden" type="checkbox"
+                  name="visited-attractions" value="Мост Дьявола" checked>
+                <span class="visited-attractions__button">Мост Дьявола</span>
               </label>
             </li>
 
             <li class="visited-attractions__item visited-attractions-control">
               <label class="visited-attractions-control__wrapper">
-                <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
-                  value="Гора-Колокол" checked>
-                <span class="visited-attractions-control__label">Гора-Колокол</span>
+                <input class="visited-attractions-control__input visually-hidden" type="checkbox"
+                  name="visited-attractions" value="Гора-Колокол" checked>
+                <span class="visited-attractions__button">Гора-Колокол</span>
               </label>
             </li>
 
             <li class="visited-attractions__item visited-attractions-control">
               <label class="visited-attractions-control__wrapper">
-                <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
-                  value="Слайд-парк" checked>
-                <span class="visited-attractions-control__label">Слайд-парк</span>
+                <input class="visited-attractions-control__input visually-hidden" type="checkbox"
+                  name="visited-attractions" value="Слайд-парк" checked>
+                <span class="visited-attractions__button">Слайд-парк</span>
               </label>
             </li>
 
             <li class="visited-attractions__item visited-attractions-control">
               <label class="visited-attractions-control__wrapper">
-                <input class="visited-attractions-control__input" type="checkbox" name="visited-attractions"
-                  value="Красные скалы">
-                <span class="visited-attractions-control__label">Красные скалы</span>
+                <input class="visited-attractions-control__input visually-hidden" type="checkbox"
+                  name="visited-attractions" value="Красные скалы">
+                <span class="visited-attractions__button">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -171,7 +170,7 @@
           <button class="feedback-form__submit-button" type="submit">
             <span class="feedback-form__post-review">отправить отзыв</span>
           </button>
-          <p class="feedback-form__remark">* — обязательные поля:</p>
+          <p class="feedback-form__remark">* — обязательные поля</p>
         </div>
       </form>
     </main>
@@ -232,23 +231,32 @@
 
 
     <div class="modal-container">
-      <div class="modal-container__wrong modal-container__wrong--show">
-        <h3 class="modal-container__title">Что-то пошло не так</h3>
-        <p class="modal-container__description">Проверьте поля, выделенные красным,скорее всего вы забыли их заполнить
+      <div class="modal-container__content modal-container__content--wrong">
+        <h3 class="modal-container__title">Что-то пошло не&nbsp;так</h3>
+        <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="modal-container__button" type="button">
-          <span class="visually-hidden">Ок</span>
-        </button>
+        <div class="modal-container__action">
+          <button class="modal-container__button" type="button">
+            <span class="modal-container__button-text">Ок</span>
+          </button>
+        </div>
       </div>
 
-      <div class="modal-container__success modal-container__success--show">
+      <div class="modal-container__content modal-container__content--success">
         <h3 class="modal-container__title">Ваш отзыв отправлен!</h3>
         <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
           мы опубликуем его на сайте.</p>
-        <button class="modal-container__button" type="button">
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
+        <div class="modal-container__action">
+          <button class="modal-container__button" type="button">
+            <span class="modal-container__button-text">Закрыть окно</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
+
 </body>
+
+</html>

@@ -4,8 +4,14 @@
 }
 
 .visited-attractions__title {
-  margin: 0 auto 20px;
+  margin: 0 auto 30px;
+  text-transform: uppercase;
+  text-align: center;
   .feedback-form-fieldset-title-style();
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 38px;
+  }
 }
 
 .visited-attractions__list {
@@ -16,17 +22,59 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    padding: 0 84px;
   }
 }
 
 .visited-attractions__item {
   margin: 0;
+  min-width: 224px;
+
+  @media (min-width: @desktop-width) {
+    min-width: 172px;
+  }
 }
 
 .visited-attractions-control__label {
   margin: 0;
   .feedback-form-fieldset-value();
+}
+
+.visited-attractions__button::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -62px;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.visited-attractions__button::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  display: block;
+  height: 9px;
+  width: 18px;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
+  transform: rotate(-45deg);
+}
+
+.visited-attractions-control__input:not(:checked)+.visited-attractions__button::after {
+  display: none;
 }

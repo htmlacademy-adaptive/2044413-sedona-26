@@ -13,17 +13,40 @@
 }
 
 .attraction__image {
+  display: block;
   height: 280px;
   margin: 0;
+  margin-bottom: 15px;
   background-color: #00ffff;
 
   @media (min-width: @tablet-width) {
     height: 267px;
+    margin-bottom: 0;
   }
 }
 
 .attraction__description {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   margin: 0;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 
   a {
     color: inherit;
@@ -37,17 +60,47 @@
 
 .attraction__name {
   margin: 0;
+  margin-bottom: 13px;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .attraction__author {
-  margin: 0;
+  display: block;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .attraction__like-button {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .attraction__likes-amount {
-  margin: 0;
+  margin-left: 14px;
+
+  @media (min-width: @desktop-width) {
+    opacity: 1;
+    color: #ffffff;
+  }
+}
+
+.attraction__likes-number {
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
 }
