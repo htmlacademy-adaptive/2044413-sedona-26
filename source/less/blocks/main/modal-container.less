@@ -13,66 +13,56 @@
   }
 }
 
+.modal-container--displayed {
+  display: block;
+}
+
 .modal-container__content {
   display: none;
   box-sizing: border-box;
   margin: 0 auto;
-  min-width: 340px;
-  max-width: 340px;
+  width: 340px;
   padding-top: 20px;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    min-width: 400px;
-    max-width: 400px;
+    width: 400px;
+  }
+
+  &--wrong {
+    margin-top: 116px;
+    padding-top: 45px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 283px;
+      padding-top: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 244px;
+      padding-top: 48px;
+    }
+  }
+
+  &--success {
+    margin-top: 402px;
+    padding-top: 39px;
+
+    @media (min-width: @tablet-width) {
+      width: 640px;
+      margin-top: 162px;
+      padding-top: 53px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 145px;
+      padding-top: 51px;
+    }
   }
 }
 
-.modal-container__content.modal-container__content--success {
-  @media (min-width: @tablet-width) {
-    min-width: 640px;
-    max-width: 640px;
-  }
-}
-
-.modal-container__content--wrong {
-  margin-top: 116px;
-  padding-top: 45px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 283px;
-    padding-top: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 244px;
-    padding-top: 48px;
-  }
-}
-
-.modal-container__content--success {
-  margin-top: 402px;
-  padding-top: 39px;
-
-  @media (min-width: @tablet-width) {
-    margin-top: 162px;
-    padding-top: 53px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 145px;
-    padding-top: 51px;
-  }
-}
-
-.modal-container__content--wrong.modal-container__content--show {
-  display: none;
-  // display: block; // необходимо использовать, если подключить js к модалкам
-}
-
-.modal-container__content--success.modal-container__content--show {
-  display: none;
-  // display: block; // необходимо использовать, если подключить js к модалкам
+.modal-container__content--displayed {
+  display: block;
 }
 
 .modal-container__title {
@@ -178,8 +168,6 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
-    font-weight: 700;
     font-size: 21px;
-    line-height: 26px;
   }
 }

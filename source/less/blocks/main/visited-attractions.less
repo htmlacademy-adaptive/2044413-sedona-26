@@ -42,15 +42,16 @@
   .feedback-form-fieldset-value();
 }
 
-.visited-attractions__button {
+.visited-attractions__button::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: -62px;
   display: block;
   width: 46px;
   height: 46px;
   border-radius: 4px;
   background-color: #f2f2f2;
-  position: absolute;
-  top: -13px;
-  left: -62px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -62,33 +63,18 @@
 }
 
 .visited-attractions__button::after {
-  position: absolute;
   content: "";
-  height: 4px;
-  background-color: #333333;
-  display: block;
-  top: 50%;
-  left: 66%;
-  width: 9px;
-  margin-left: -15px;
-  transform: rotate(45deg);
-}
-
-.visited-attractions__button::before {
   position: absolute;
-  content: "";
-  height: 4px;
-  background-color: #333333;
+  top: 0px;
+  left: -50px;
   display: block;
-  top: 51%;
-  left: 68%;
+  height: 9px;
   width: 18px;
-  margin-left: -11px;
-  margin-top: -6px;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
   transform: rotate(-45deg);
 }
 
-.visited-attractions-control__input:not(:checked) + .visited-attractions__button::before,
-.visited-attractions-control__input:not(:checked) + .visited-attractions__button::after {
+.visited-attractions-control__input:not(:checked)+.visited-attractions__button::after {
   display: none;
 }
