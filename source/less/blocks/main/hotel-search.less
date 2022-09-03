@@ -92,5 +92,29 @@
   box-sizing: border-box;
   margin: 0;
   background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
   background-color: #83eeb0;
+  background-size: 100% auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile-@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet-@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop-@2x.jpg");
+    }
+  }
 }

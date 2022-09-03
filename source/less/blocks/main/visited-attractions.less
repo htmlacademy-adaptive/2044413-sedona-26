@@ -65,7 +65,7 @@
 .visited-attractions__button::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -50px;
   display: block;
   height: 9px;
@@ -75,6 +75,6 @@
   transform: rotate(-45deg);
 }
 
-.visited-attractions-control__input:not(:checked)+.visited-attractions__button::after {
+.visited-attractions-control__input:not(:checked) + .visited-attractions__button::after {
   display: none;
 }

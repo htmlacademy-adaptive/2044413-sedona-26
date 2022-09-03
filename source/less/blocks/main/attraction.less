@@ -15,15 +15,13 @@
 .attraction__image {
   display: block;
   height: 280px;
+  width: 100%;
+  object-fit: cover;
   margin: 0;
-  margin-bottom: 15px;
   background-color: #00ffff;
 
   @media (min-width: @tablet-width) {
     height: 267px;
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 0;
   }
 }
 
@@ -89,6 +87,15 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
+  }
+}
+
+.attraction__like-button svg path {
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
   }
 }
 
