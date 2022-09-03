@@ -10,7 +10,18 @@
   margin-bottom: 59px;
   padding-top: 78px;
   background-image: url("../img/image-welcome-to-the-gorgeous-mobile.jpg");
-  background-color: #115e5e;
+  background-repeat: no-repeat;
+  background-color: #1ebbda;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/image-welcome-to-the-gorgeous-tablet-@2x.jpg");
+    background-size: 901px auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/image-welcome-to-the-gorgeous-desktop-@2x.jpg");
+    background-size: 901px auto;
+  }
 
   &--catalog,
   &--form {
