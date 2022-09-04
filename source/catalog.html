@@ -6,6 +6,10 @@
   <title>фото и видео о Седоне</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/favicons/favicon-32x32.png"><!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -56,7 +60,8 @@
           <img class="main-header__image" src="./img/sedona-catalog-mobile.svg" width="229" height="39" alt="Седона.">
         </div>
         <p class="main-header__description main-header__description--catalog">фото и видео</p>
-        <p class="main-header__explanation main-header__explanation--catalog">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+        <p class="main-header__explanation main-header__explanation--catalog">Не можете решиться на путешествие из-за
+          курса? Фотографии помогут вам забыть
           о политике и экономике.</p>
       </section>
 
@@ -65,8 +70,12 @@
         <ul class="attractions__list">
           <li class="attractions__item attraction">
             <a class="attraction__image-link" href="#">
-              <img class="attraction__image" src="./img/photo-1-mobile.jpg" width="100%" height="100%"
-                alt="Фотография неродных простор.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/photo-1-desktop.jpg, ./img/photo-1-desktop-@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-1-tablet.jpg, ./img/photo-1-tablet-@2x.jpg 2x">
+                <img class="attraction__image" src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile-@2x.jpg 2x"
+                  width="280px" height="280px" alt="Фотография неродных простор.">
+              </picture>
             </a>
             <div class="attraction__description">
               <div class="attraction__artist-painting">
@@ -82,7 +91,7 @@
                     height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                      fill="#ffffff" />
+                      fill="#000000" />
                   </svg>
                 </a>
                 <span class="attraction__likes-amount">1350</span>
@@ -92,8 +101,13 @@
 
           <li class="attractions__item attraction">
             <a class="attraction__image-link" href="#">
-              <img class="attraction__image" src="./img/photo-2-mobile.jpg" width="100%" height="100%"
-                alt="Фотография местной растительности.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-2-desktop.jpg, ./img/photo-2-desktop-@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-2-tablet.jpg, ./img/photo-2-tablet-@2x.jpg 2x">
+                <img class="attraction__image" src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile-@2x.jpg 2x"
+                  width="280px" height="280px" alt="Фотография местной растительности.">
+              </picture>
             </a>
             <div class="attraction__description">
               <div class="attraction__artist-painting">
@@ -108,7 +122,7 @@
                     height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                      fill="#ffffff" />
+                      fill="#000000" />
                   </svg>
                 </a>
                 <span class="attraction__likes-amount">143</span>
@@ -118,8 +132,13 @@
 
           <li class="attractions__item attraction">
             <a class="attraction__image-link" href="#">
-              <img class="attraction__image" src="./img/photo-3-mobile.jpg" width="100%" height="100%"
-                alt="Фотография дороги на север.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-3-desktop.jpg, ./img/photo-3-desktop-@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-3-tablet.jpg, ./img/photo-3-tablet-@2x.jpg 2x">
+                <img class="attraction__image" src="./img/photo-3-mobile.jpg" srcset="./img/photo-3-mobile-@2x.jpg 2x"
+                  width="280px" height="280px" alt="Фотография дороги на север.">
+              </picture>
             </a>
             <div class="attraction__description">
               <div class="attraction__artist-painting">
@@ -134,7 +153,7 @@
                     height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                      fill="#ffffff" />
+                      fill="#000000" />
                   </svg>
                 </a>
                 <span class="attraction__likes-amount">96</span>
@@ -144,8 +163,13 @@
 
           <li class="attractions__item attraction">
             <a class="attraction__image-link" href="#">
-              <img class="attraction__image" src="./img/photo-4-mobile.jpg" width="100%" height="100%"
-                alt="Фотография моста дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./img/photo-4-desktop.jpg, ./img/photo-4-desktop-@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-4-tablet.jpg, ./img/photo-4-tablet-@2x.jpg 2x">
+                <img class="attraction__image" src="./img/photo-4-mobile.jpg" srcset="./img/photo-4-mobile-@2x.jpg 2x"
+                  width="280px" height="280px" alt="Фотография моста дьявола.">
+              </picture>
             </a>
             <div class="attraction__description">
               <div class="attraction__artist-painting">
@@ -160,7 +184,7 @@
                     height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="m12.4 3.6-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4ZM2 10v8-8ZM13.2 0 6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1a2 2 0 0 0-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1ZM4 8H0v12h4V8Z"
-                      fill="#ffffff" />
+                      fill="#000000" />
                   </svg>
                 </a>
                 <span class="attraction__likes-amount">256</span>
@@ -172,17 +196,16 @@
 
       <section class="main-container__video-presentation video-presentation">
         <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
-        <p class="video-presentation__info">Смотрите видеопризентацию и скорее за билетами, пока они<br> не подорожали в
+        <p class="video-presentation__info">Смотрите видеопризентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
         <div class="video-presentation__player">
-          <img class="video-presentation__image" src="./img/video-presentation-catalog-mobile.jpg" alt="Player"
-            width="100%" height="177">
-          <button class="video-presentation__play-button" type="button">
-            <svg aria-hidden="true" focusable="false" role="img" aria-label="Воспроизвести видео." width="48"
-              height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="m48 27.02-48 27v-54l48 27Z" fill="#fff" fill-opacity=".7" />
-            </svg>
-          </button>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/video-presentation-catalog-desktop.jpg, ./img/video-presentation-catalog-desktop-@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/video-presentation-catalog-tablet.jpg, ./img/video-presentation-catalog-tablet-@2x.jpg 2x">
+            <img class="video-presentation__image" src="./img/video-presentation-catalog-mobile.jpg" srcset="./img/video-presentation-catalog-mobile-@2x.jpg 2x" width="280px" height="177px"
+              alt="Фотография видео-презентации.">
+          </picture>
+          <button class="video-presentation__play-button" type="button"></button>
         </div>
       </section>
     </main>

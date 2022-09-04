@@ -5,24 +5,31 @@
 .impression-control__wrapper {
   display: block;
   position: relative;
-  margin-bottom: 36px;
-  margin-left: 62px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  cursor: pointer;
 }
 
 .impression-control__input {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .impression-control__label {
   display: block;
-  margin-left: 31px;
-  margin-bottom: 36px;
+  // margin-left: 31px;
+  // margin-bottom: 36px;
+  margin: 0 0 62px 36px;
   .feedback-form-fieldset-value();
+}
+
+.impression-control__button {
+  display: block;
+  padding: 15px 0 21px 62px;
 }
 
 .impression-control__button::before {
@@ -31,28 +38,21 @@
   width: 46px;
   height: 46px;
   background-color: #f2f2f2;
-  border-radius: 50%;
   position: absolute;
-  top: -13px;
-  left: -62px;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
+  top: 5px;
+  left: 0;
+  border-radius: 50%;
 }
 
 .impression-control__button::after {
   content: "";
+  display: block;
   width: 16px;
   height: 16px;
   background-color: #333333;
   position: absolute;
-  top: 2px;
-  left: -46px;
+  top: 20px;
+  left: 15px;
   border-radius: 50%;
 
   &:hover {
@@ -62,6 +62,15 @@
   &:active {
     background-color: rgba(51, 51, 51, 0.3);
   }
+}
+
+.impression-control__input:hover + .impression-control__button::before,
+.impression-control__input:focus + .impression-control__button::before {
+  background-color: #e5e5e5;
+}
+
+.impression-control__input:active + .impression-control__button::before {
+  background-color: #d5d5d5;
 }
 
 .impression-control__input:not(:checked) + .impression-control__button::after {

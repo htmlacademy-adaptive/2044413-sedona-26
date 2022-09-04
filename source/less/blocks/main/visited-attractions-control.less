@@ -5,20 +5,64 @@
 .visited-attractions-control__wrapper {
   position: relative;
   display: block;
-  margin-bottom: 36px;
-  margin-left: 62px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  cursor: pointer;
 }
 
 .visited-attractions-control__input {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .visited-attractions-control__label {
   display: block;
-  margin-left: 62px;
-  margin-bottom: 36px;
+  margin: 0 0 62px 36px;
+  .feedback-form-fieldset-value();
+}
+
+.visited-attractions-control__button {
+  display: block;
+  padding: 15px 0 21px 62px;
+}
+
+.visited-attractions-control__button::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.visited-attractions-control__button::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  display: block;
+  height: 9px;
+  width: 18px;
+  border-left: 4px solid #333333;
+  border-bottom: 4px solid #333333;
+  transform: rotate(-45deg);
+}
+
+.visited-attractions-control__input:hover + .visited-attractions-control__button::before,
+.visited-attractions-control__input:focus + .visited-attractions-control__button::before {
+  background-color: #e5e5e5;
+}
+
+.visited-attractions-control__input:active + .visited-attractions-control__button::before {
+  background-color: #d5d5d5;
+}
+
+.visited-attractions-control__input:not(:checked) + .visited-attractions-control__button::after {
+  display: none;
 }
