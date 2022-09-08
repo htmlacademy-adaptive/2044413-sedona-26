@@ -24,6 +24,7 @@
   display: block;
   width: 100%;
   max-width: 768px;
+  min-height: 150px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
@@ -33,4 +34,8 @@
   border: none;
   padding: 16px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    min-height: 160px;
+  }
 }
