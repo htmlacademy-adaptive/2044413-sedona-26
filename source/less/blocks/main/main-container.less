@@ -5,7 +5,15 @@
 
 .main-container__main-header {
   position: relative;
-  padding-bottom: 53px;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 44px;
+  }
 }
 
 // Page Index

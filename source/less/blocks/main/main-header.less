@@ -21,7 +21,6 @@
   box-sizing: border-box;
   width: 100%;
   height: 389px;
-  margin-bottom: 59px;
   padding-top: 90px;
   background-image: url("../img/image-welcome-to-the-gorgeous-mobile.jpg");
   background-repeat: no-repeat;
@@ -56,23 +55,30 @@
     content: "";
     position: absolute;
     bottom: 0;
-    width: 100%;
     height: 57px;
+    left: 0;
+    right: 0;
     background-image: url("../img/maska-1-index-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
   }
 }
 
 .main-header--catalog .main-header__image-container,
 .main-header--form .main-header__image-container {
-  height: 214px;
+  height: 158px;
+  padding-top: 52px;
   background-image: url("../img/back-mobile.jpg");
 
   @media (min-width: @tablet-width) {
-    height: 346px;
+    height: 290px;
+    padding-top: 95px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 357px;
+    height: 301px;
+    padding-top: 102px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -103,9 +109,24 @@
   margin: 0 auto;
 }
 
+.main-header--catalog .main-header__image,
+.main-header--form .main-header__image {
+  height: 39px;
+  width: auto;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 80px;
+  }
+}
+
 .main-header__description {
   width: 272px;
-  margin: 0 auto 24px;
+  margin: 37px auto 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -114,16 +135,28 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
+    margin-top: 66px;
     width: 520px;
     padding: 0 124px;
     font-size: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 100px;
+  }
 }
 
 .main-header--catalog .main-header__description {
+  margin-top: 37px;
+
   @media (min-width: @tablet-width) {
+    margin-top: 66px;
     width: 458px;
     font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 100px;
   }
 }
 
