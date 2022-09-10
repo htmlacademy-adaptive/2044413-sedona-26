@@ -30,7 +30,7 @@
 
   &:first-child {
     position: relative;
-    padding-top: 15px;
+    padding-top: 45px;
 
     @media (min-width: @tablet-width) {
       padding-top: 0;
@@ -39,11 +39,14 @@
     &::before {
       content: "";
       position: absolute;
-      top: -15px;
-      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
       height: 37px;
-      background-image: url("../img/maska-2-mobile.svg");
+      background-image: url("../img/maska-advantage-mobile.svg");
       background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
 
       @media (min-width: @tablet-width) {
         display: none;

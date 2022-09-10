@@ -90,12 +90,29 @@
   }
 }
 
-.attraction__like-button svg path {
+.attraction__like-button svg {
+  fill: #000000;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @media (min-width: @desktop-width) {
     fill: #ffffff;
     opacity: 1;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
