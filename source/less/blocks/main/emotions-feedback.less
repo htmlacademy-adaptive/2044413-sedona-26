@@ -9,33 +9,34 @@
 }
 
 .emotions-feedback__title {
-  width: 300px;
+  width: 250px;
   margin: 0 auto 20px;
   text-transform: uppercase;
   text-align: center;
   .feedback-form-fieldset-title-style();
 
   @media (min-width: @tablet-width) {
-    padding: 0 50px;
+    width: 320px;
+    padding: 0 40px;
   }
 }
 
 .emotions-feedback__text {
   display: block;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 768px;
   min-height: 150px;
   margin: 0 auto;
+  padding: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   background: #f2f2f2;
   border: none;
-  padding: 16px;
-  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    max-width: 768px;
     min-height: 160px;
   }
 }

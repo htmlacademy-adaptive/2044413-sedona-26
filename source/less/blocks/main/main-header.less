@@ -1,6 +1,10 @@
 .main-header {
   margin: 0;
 
+  &--form {
+    padding-bottom: 53px;
+  }
+
   &--form::after {
     content: "";
     position: absolute;
@@ -54,7 +58,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     height: 57px;
     left: 0;
     right: 0;
