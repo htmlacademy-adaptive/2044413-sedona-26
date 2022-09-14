@@ -18,10 +18,15 @@
   width: 100%;
   object-fit: cover;
   margin: 0;
+  margin-bottom: 15px;
   background-color: #00ffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 
   @media (min-width: @tablet-width) {
     height: 267px;
+    margin-bottom: 0;
   }
 }
 
@@ -30,7 +35,7 @@
   flex-direction: column;
   position: relative;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -54,13 +59,23 @@
   }
 }
 
+.attraction:last-child .attraction__description {
+  padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+  }
+}
+
 .attraction__link {
   margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .attraction__name {
   margin: 0;
-  margin-bottom: 13px;
   text-transform: uppercase;
 
   @media (min-width: @desktop-width) {

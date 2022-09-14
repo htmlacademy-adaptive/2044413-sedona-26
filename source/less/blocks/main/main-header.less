@@ -1,6 +1,18 @@
 .main-header {
   margin: 0;
 
+  &--catalog {
+    padding-bottom: 60px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 86px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 91px;
+    }
+  }
+
   &--form {
     padding-bottom: 53px;
   }
@@ -36,6 +48,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    height: 518px;
     padding-top: 77px;
     background-image: url("../img/image-welcome-to-the-gorgeous-tablet.jpg");
     background-size: 100% auto;
@@ -111,6 +124,11 @@
 .main-header__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .main-header--catalog .main-header__image,
@@ -130,7 +148,7 @@
 
 .main-header__description {
   width: 272px;
-  margin: 37px auto 24px;
+  margin: 32px auto 37px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -139,14 +157,20 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    margin-top: 66px;
+    font-size: 21px;
+    margin-top: 49px;
+    margin-bottom: 28px;
     width: 520px;
     padding: 0 124px;
     font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+
+  &--catalog {
+    margin-bottom: 27px;
   }
 }
 
