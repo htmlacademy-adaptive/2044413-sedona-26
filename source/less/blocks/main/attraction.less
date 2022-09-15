@@ -132,7 +132,12 @@
 }
 
 .attraction__likes-amount {
-  margin-left: 14px;
+  margin-left: 12px;
+  font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+  }
 
   @media (min-width: @desktop-width) {
     opacity: 1;
@@ -142,6 +147,7 @@
 
 .attraction__likes-number {
   @media (min-width: @tablet-width) {
+    padding-bottom: 5px;
     align-self: center;
   }
 }

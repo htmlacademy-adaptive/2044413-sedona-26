@@ -1,20 +1,32 @@
 .user-info {
-  padding: 0 20px 39px;
+  padding: 0 20px 27px;
   border: none;
 
   @media (min-width: @tablet-width) {
     padding: 0 0 15px;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 
     &:first-child {
       border-right: 1px solid #dbdbdb;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .user-info__title {
-  margin: 0 auto 38px;
+  margin: 0 auto 40px;
   .feedback-form-fieldset-title-style();
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .user-info__item {
@@ -43,6 +55,8 @@
 }
 
 .user-info__item:last-child .user-info__item-input {
+  margin-bottom: 34px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
@@ -64,11 +78,10 @@
   box-sizing: border-box;
   width: 100%;
   min-height: 58px;
-  padding: 12px;
-  padding-right: 60px;
+  padding: 13px 60px 11px 12px;
   margin-bottom: 37px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: #000000;
   background-color: #f2f2f2;

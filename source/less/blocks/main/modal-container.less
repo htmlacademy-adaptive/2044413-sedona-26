@@ -1,5 +1,5 @@
 .modal-container {
-  display: none;
+  // display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,10 +18,9 @@
 }
 
 .modal-container__content {
-  display: none;
   box-sizing: border-box;
   margin: 0 auto;
-  width: 340px;
+  width: 320px;
   padding-top: 20px;
   background-color: #ffffff;
 
@@ -30,12 +29,13 @@
   }
 
   &--wrong {
+    display: none;
     margin-top: 116px;
-    padding-top: 45px;
+    padding: 45px 0 15px;
 
     @media (min-width: @tablet-width) {
       margin-top: 283px;
-      padding-top: 50px;
+      padding: 47px 0 5px;
     }
 
     @media (min-width: @desktop-width) {
@@ -45,18 +45,19 @@
   }
 
   &--success {
+    // display: none;
     margin-top: 402px;
     padding-top: 39px;
 
     @media (min-width: @tablet-width) {
       width: 640px;
       margin-top: 162px;
-      padding-top: 53px;
+      padding-top: 43px;
     }
 
     @media (min-width: @desktop-width) {
       margin-top: 145px;
-      padding-top: 51px;
+      padding-top: 42px;
     }
   }
 }
@@ -66,11 +67,10 @@
 }
 
 .modal-container__title {
-  margin: 0;
-  margin-bottom: 37px;
+  margin: 0 0 25px;
   padding: 0 42px;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -91,8 +91,7 @@
 }
 
 .modal-container__description {
-  margin: 0;
-  margin-bottom: 14px;
+  margin: 0 0 8px;
   padding: 0 42px;
   font-size: 14px;
   line-height: 21px;
@@ -100,14 +99,16 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 2px;
     padding: 0 47px;
   }
 }
 
 .modal-container__content--success .modal-container__description {
-  padding: 0 38px;
+  padding: 0 38px 43px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
     padding: 0 98px;
   }
 }
@@ -163,6 +164,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  letter-spacing: -1px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;

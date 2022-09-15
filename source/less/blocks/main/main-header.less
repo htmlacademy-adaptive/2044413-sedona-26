@@ -5,16 +5,24 @@
     padding-bottom: 60px;
 
     @media (min-width: @tablet-width) {
-      padding-bottom: 86px;
+      padding-bottom: 80px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-bottom: 91px;
+      padding-bottom: 88px;
     }
   }
 
   &--form {
     padding-bottom: 53px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 107px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 70px;
+    }
   }
 
   &--form::after {
@@ -88,6 +96,8 @@
   padding-top: 52px;
   background-image: url("../img/back-mobile.jpg");
 
+  background-position-y: bottom;
+
   @media (min-width: @tablet-width) {
     height: 290px;
     padding-top: 95px;
@@ -148,7 +158,7 @@
 
 .main-header__description {
   width: 272px;
-  margin: 32px auto 37px;
+  margin: 34px auto 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -156,21 +166,35 @@
   text-align: center;
   color: #000000;
 
+  &--catalog {
+    margin-bottom: 27px;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 21px;
     margin-top: 49px;
     margin-bottom: 28px;
     width: 520px;
     padding: 0 124px;
-    font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 60px;
+    margin-bottom: 29px;
+  }
+}
+
+.main-header--form .main-header__description {
+  margin: 36px auto 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 64px auto 22px;
+    width: 434px;
+    font-size: 30px;
   }
 
-  &--catalog {
-    margin-bottom: 27px;
+  @media (min-width: @desktop-width) {
+    margin: 113px auto 32px;
   }
 }
 
@@ -179,19 +203,13 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 66px;
+    margin-bottom: 33px;
     width: 458px;
     font-size: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 100px;
-  }
-}
-
-.main-header--form .main-header__description {
-  @media (min-width: @tablet-width) {
-    width: 434px;
-    font-size: 30px;
+    margin-top: 98px;
   }
 }
 
@@ -209,12 +227,12 @@
 
 .main-header--catalog .main-header__explanation {
   @media (min-width: @tablet-width) {
-    width: 458px;
+    width: 445px;
   }
 }
 
 .main-header--form .main-header__explanation {
   @media (min-width: @tablet-width) {
-    width: 434px;
+    width: 440px;
   }
 }

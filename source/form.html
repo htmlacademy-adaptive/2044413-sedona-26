@@ -61,7 +61,7 @@
       <section class="main-container__main-header main-header main-header--form">
         <h1 class="visually-hidden">Седона.</h1>
         <div class="main-header__image-container">
-          <img class="main-header__image" src="./img/sedona-catalog-mobile.svg" width="" height="39" alt="Седона.">
+          <img class="main-header__image" src="./img/sedona-catalog.svg" width="" height="39" alt="Седона.">
         </div>
         <p class="main-header__description">Оставьте свой отзыв</p>
         <p class="main-header__explanation">Помогите нашим отелям стать лучше! оставьте
@@ -74,17 +74,17 @@
           <p class="user-info__item">
             <label class="user-info__item-label" for="user-name">Имя*:</label>
             <input class="user-info__item-input" type="text" id="user-name" name="user-name"
-              placeholder="Введите ваше имя" required>
+              placeholder="Введите ваше имя" value="Пётр" required>
           </p>
           <p class="user-info__item">
             <label class="user-info__item-label" for="user-surname">Фамилия*:</label>
             <input class="user-info__item-input" type="text" id="user-surname" name="user-surname"
-              placeholder="Введите вашу фамилию" required>
+              placeholder="Введите вашу фамилию" value="Пустота" required>
           </p>
           <p class="user-info__item">
             <label class="user-info__item-label" for="user-patronymic">Отчество:</label>
             <input class="user-info__item-input" type="text" id="user-patronymic" name="user-patronymic"
-              placeholder="Введите ваше отчество, если желаете">
+              placeholder="Введите ваше отчество, если желаете" value="Викторович">
           </p>
         </fieldset>
 
@@ -109,7 +109,7 @@
               <label class="impression-control__wrapper">
                 <input class="impression-control__input visually-hidden" type="radio" name="impression"
                   value="Скорее положительное" checked>
-                <span class="impression-control__button">Скорее отрицательное</span>
+                <span class="impression-control__button">Скорее положительное</span>
               </label>
             </li>
 
@@ -231,7 +231,7 @@
 
     <div class="modal-container">
       <div class="modal-container__content modal-container__content--wrong">
-        <h3 class="modal-container__title">Что-то пошло не&nbsp;так</h3>
+        <h3 class="modal-container__title">Что-то пошло не&nbsp;так!</h3>
         <p class="modal-container__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <div class="modal-container__action">
@@ -243,7 +243,7 @@
 
       <div class="modal-container__content modal-container__content--success">
         <h3 class="modal-container__title">Ваш отзыв отправлен!</h3>
-        <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время
           мы опубликуем его на сайте.</p>
         <div class="modal-container__action">
           <button class="modal-container__button" type="button">
