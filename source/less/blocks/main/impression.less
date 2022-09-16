@@ -3,20 +3,30 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 0 0 24px;
+    padding: 0 0 37px;
     border-top: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 63px;
   }
 }
 
 .impression__title {
   width: 250px;
-  margin: 0 auto 43px;
-  padding: 0;
+  margin: 0 auto 14px;
+  padding-left: 20px;
+  text-align: center;
   .feedback-form-fieldset-title-style();
 
   @media (min-width: @tablet-width) {
     width: 320px;
+    margin: 0 auto 24px;
     padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 41px;
   }
 }
 
@@ -41,4 +51,8 @@
 .impression__item {
   margin: 0;
   min-width: 280px;
+
+  @media (min-width: @desktop-width) {
+    min-width: 239px;
+  }
 }
