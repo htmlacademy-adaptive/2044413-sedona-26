@@ -61,7 +61,7 @@
       <section class="main-container__main-header main-header main-header--form">
         <h1 class="visually-hidden">Седона.</h1>
         <div class="main-header__image-container">
-          <img class="main-header__image" src="./img/sedona-catalog.svg" width="" height="39" alt="Седона.">
+          <img class="main-header__image" src="./img/sedona-catalog.svg" width="229" height="39" alt="Седона.">
         </div>
         <p class="main-header__description">Оставьте свой отзыв</p>
         <p class="main-header__explanation">Помогите нашим отелям стать лучше! оставьте
@@ -92,7 +92,7 @@
           <legend class="user-info__title">Контактная информация:</legend>
           <p class="user-info__item user-info__item--telephone">
             <label class="user-info__item-label" for="user-phone">Контактный телефон*:</label>
-            <input class="user-info__item-input" type="telephone" id="user-phone" name="user-phone"
+            <input class="user-info__item-input" type="tel" id="user-phone" name="user-phone"
               placeholder="Введите телефон" required>
           </p>
           <p class="user-info__item user-info__item--email">
@@ -118,6 +118,7 @@
                 <input class="impression-control__input visually-hidden" type="radio" name="impression"
                   value="Скорее отрицательное">
                 <span class="impression-control__button">Скорее отрицательное</span>
+              </label>
             </li>
 
             <li class="impression__item impression-control">
@@ -243,7 +244,8 @@
 
       <div class="modal-container__content modal-container__content--success">
         <h3 class="modal-container__title">Ваш отзыв отправлен!</h3>
-        <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время
+        <p class="modal-container__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее
+          время
           мы опубликуем его на сайте.</p>
         <div class="modal-container__action">
           <button class="modal-container__button" type="button">
