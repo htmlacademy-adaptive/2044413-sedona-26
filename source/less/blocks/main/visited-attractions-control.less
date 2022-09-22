@@ -23,31 +23,31 @@
 .visited-attractions-control__button {
   display: block;
   padding: 15px 0 21px 62px;
-}
 
-.visited-attractions-control__button::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-  display: block;
-  width: 46px;
-  height: 46px;
-  border-radius: 4px;
-  background-color: #f2f2f2;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+  }
 
-.visited-attractions-control__button::after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 13px;
-  display: block;
-  height: 9px;
-  width: 18px;
-  border-left: 4px solid #333333;
-  border-bottom: 4px solid #333333;
-  transform: rotate(-45deg);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 13px;
+    display: block;
+    height: 9px;
+    width: 18px;
+    border-left: 4px solid #333333;
+    border-bottom: 4px solid #333333;
+    transform: rotate(-45deg);
+  }
 }
 
 .visited-attractions-control__input:hover + .visited-attractions-control__button::before,

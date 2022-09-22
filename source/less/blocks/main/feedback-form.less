@@ -37,29 +37,29 @@
       width: 466px;
     }
   }
-}
 
-.feedback-form__user-info::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 23px;
-  background-color: #e5e5e5;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 23px;
+    background-color: #e5e5e5;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
-}
 
-.feedback-form__user-info--full-name::after {
-  bottom: 21px;
-}
+  &--full-name::after {
+    bottom: 21px;
+  }
 
-.feedback-form__user-info--contacts::after {
-  bottom: 25px;
+  &--contacts::after {
+    bottom: 25px;
+  }
 }
 
 .feedback-form__user-info--full-name.user-info {
@@ -110,20 +110,20 @@
     width: 100%;
     margin: 0;
   }
-}
 
-.feedback-form__impression::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 10px;
-  background-color: #e5e5e5;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 10px;
+    background-color: #e5e5e5;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -135,20 +135,20 @@
     width: 100%;
     margin: 0 0 16px;
   }
-}
 
-.feedback-form__visited-attractions::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  left: 0;
-  bottom: 10px;
-  background-color: #e5e5e5;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 10px;
+    background-color: #e5e5e5;
 
-  @media (min-width: @tablet-width) {
-    display: none;
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -175,6 +175,10 @@
     max-width: 768px;
     margin-bottom: 64px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .feedback-form__submit-button {
@@ -183,9 +187,12 @@
   width: 281px;
   margin-bottom: 1px;
   padding: 19px 33px 13px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
   background-color: #81b3d2;
   border: none;
   cursor: pointer;
@@ -210,16 +217,6 @@
     opacity: 0.3;
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
-}
-
-.feedback-form__post-review {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .feedback-form__remark {
