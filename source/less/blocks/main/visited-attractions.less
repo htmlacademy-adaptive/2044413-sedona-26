@@ -3,7 +3,7 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    padding: 0 0 17px;
+    padding: 0 0 16px;
     border-top: 1px solid #dbdbdb;
   }
 
@@ -62,39 +62,41 @@
   }
 }
 
-.visited-attractions__button::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: -62px;
-  display: block;
-  width: 46px;
-  height: 46px;
-  border-radius: 4px;
-  background-color: #f2f2f2;
-  cursor: pointer;
+.visited-attractions__button {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -62px;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    cursor: pointer;
 
-  &:hover {
-    background-color: #e5e5e5;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active {
+      background-color: #d5d5d5;
+    }
   }
 
-  &:active {
-    background-color: #d5d5d5;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    display: block;
+    height: 9px;
+    width: 18px;
+    border-left: 4px solid #333333;
+    border-bottom: 4px solid #333333;
+    transform: rotate(-45deg);
+    cursor: pointer;
   }
-}
-
-.visited-attractions__button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  display: block;
-  height: 9px;
-  width: 18px;
-  border-left: 4px solid #333333;
-  border-bottom: 4px solid #333333;
-  transform: rotate(-45deg);
-  cursor: pointer;
 }
 
 .visited-attractions-control__input:not(:checked) + .visited-attractions__button::after {
